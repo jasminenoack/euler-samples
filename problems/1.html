@@ -8,88 +8,90 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <body>
-        <div>
-            <a href="../index.html">Index</a>
+        <div class="o-container o-container--medium">
+            <div>
+                <a href="../index.html">Index</a>
+            </div>
+            <h1>Problem 1: Multiples of 3 and 5</h1>
+
+            <h2>Problem Statement</h2>
+            <p>
+                If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
+            </p>
+            <p>
+                Find the sum of all the multiples of 3 or 5 below 1000.
+            </p>
+            <p>
+                <a href="https://projecteuler.net/problem=1" target="_blank">Source</a>
+            </p>
+            <h2>Simple Version</h2>
+            <p>
+                First we should attempt to get an algorithm that can solve the simple version.
+            </p>
+            <p>
+                <button id="simple">Test the Simple Version(10)</button>
+            </p>
+
+            <div id="simple-equation"></div>
+            <div id="simple-steps"></div>
+
+            <hr>
+
+            <p>
+                Let's try a few more numbers.
+            </p>
+            <p>
+                <button id="simple-100">Test a Slightly Larger Version(100)</button>
+            </p>
+
+            <div id="simple-equation-100"></div>
+            <div id="simple-steps-100"></div>
+
+            <hr>
+
+            <p>
+                Okay now let's try this on the full list of 1000 numbers.
+            </p>
+            <p>
+                <button id="simple-1000">Test the Complex Version(1000)</button>
+            </p>
+
+            <div id="simple-equation-1000"></div>
+            <div id="simple-steps-1000"></div>
+
+            <hr>
+            <p>
+                Okay now we have an answer, but it's a little inefficent. So let's not save all the numbers. Let's try this on the 100 number set.
+            </p>
+            <p>
+                <button id="optimize-memory-100">Optimize Memory(100)</button>
+            </p>
+
+            <div id="optimize-memory-equation-100"></div>
+            <div id="optimize-memory-steps-100"></div>
+
+            <hr>
+            <p>
+                Okay now maybe we can look at less numbers. Maybe we don't have to count by 1s since we only need variables that are multiples of 3 or 5. So let's increment by those numbers instead of 1 to save some time.
+            </p>
+            <p>
+                <button id="optimize-numbers-100">Optimize Memory(100)</button>
+            </p>
+
+            <div id="optimize-numbers-equation-100"></div>
+            <div id="optimize-numbers-steps-100"></div>
+
+            <hr>
+            <p>
+                Cool so let's put those together on 1000.
+            </p>
+            <p>
+                <button id="optimize-numbers-1000">Optimized(1000)</button>
+            </p>
+
+            <div id="optimize-numbers-equation-1000"></div>
+            <div id="optimize-numbers-steps-1000"></div>
         </div>
-        <h1>Problem 1: Multiples of 3 and 5</h1>
-
-        <h2>Problem Statement</h2>
-        <p>
-            If we list all the natural numbers below 10 that are multiples of 3 or 5, we get 3, 5, 6 and 9. The sum of these multiples is 23.
-        </p>
-        <p>
-            Find the sum of all the multiples of 3 or 5 below 1000.
-        </p>
-        <p>
-            <a href="https://projecteuler.net/problem=1" target="_blank">Source</a>
-        </p>
-        <h2>Simple Version</h2>
-        <p>
-            First we should attempt to get an algorithm that can solve the simple version.
-        </p>
-        <p>
-            <button id="simple">Test the Simple Version(10)</button>
-        </p>
-
-        <div id="simple-equation"></div>
-        <div id="simple-steps"></div>
-
-        <hr>
-
-        <p>
-            Let's try a few more numbers.
-        </p>
-        <p>
-            <button id="simple-100">Test a Slightly Larger Version(100)</button>
-        </p>
-
-        <div id="simple-equation-100"></div>
-        <div id="simple-steps-100"></div>
-
-        <hr>
-
-        <p>
-            Okay now let's try this on the full list of 1000 numbers.
-        </p>
-        <p>
-            <button id="simple-1000">Test the Complex Version(1000)</button>
-        </p>
-
-        <div id="simple-equation-1000"></div>
-        <div id="simple-steps-1000"></div>
-
-        <hr>
-        <p>
-            Okay now we have an answer, but it's a little inefficent. So let's not save all the numbers. Let's try this on the 100 number set.
-        </p>
-        <p>
-            <button id="optimize-memory-100">Optimize Memory(100)</button>
-        </p>
-
-        <div id="optimize-memory-equation-100"></div>
-        <div id="optimize-memory-steps-100"></div>
-
-        <hr>
-        <p>
-            Okay now maybe we can look at less numbers. Maybe we don't have to count by 1s since we only need variables that are multiples of 3 or 5. So let's increment by those numbers instead of 1 to save some time.
-        </p>
-        <p>
-            <button id="optimize-numbers-100">Optimize Memory(100)</button>
-        </p>
-
-        <div id="optimize-numbers-equation-100"></div>
-        <div id="optimize-numbers-steps-100"></div>
-
-        <hr>
-        <p>
-            Cool so let's put those together on 1000.
-        </p>
-        <p>
-            <button id="optimize-numbers-1000">Optimized(1000)</button>
-        </p>
-
-        <div id="optimize-numbers-equation-1000"></div>
-        <div id="optimize-numbers-steps-1000"></div>
         <script src="1.js"></script>
     </body>
 </html>
