@@ -54,12 +54,12 @@ function setupSimple(max, buttonSelector, equationSelector, stepsSelector, inter
                 }
 
                 if (current >= max) {
-                    clearCurrentInterval()
                     var simpleOutcome = 0;
                     valueList.forEach((num) => {
                         simpleOutcome += num
                     })
                     html += '<p>' + simpleOutcome + ' is the total of these numbers.</p>'
+                    clearCurrentInterval()
                 } else if (current % 3 === 0 || current % 5 === 0) {
                     valueList.push(current)
                     html += '<p>' + current + ' is divisible by 3 or 5 add it to the equation.</p>'
