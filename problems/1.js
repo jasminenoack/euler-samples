@@ -9,10 +9,11 @@ function setupSimple(max, buttonSelector, equationSelector, stepsSelector, inter
     function clearCurrentInterval() {
         clearInterval(interval)
         interval = null
-        valueList = [];
+
     }
 
     button.addEventListener('click', () => {
+        valueList = [];
         if (interval) {
             clearCurrentInterval()
         } else {
